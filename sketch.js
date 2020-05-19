@@ -88,6 +88,53 @@ function keyPressed() {
     mode = 14
  }
 }
+function orb3 () {
+     push()
+   fill ('52')
+    textFont (font);
+  
+  textSize (60)
+  text ('03',-500,0)
+    push()
+  textSize (20)
+  text ('Magnetic \nAttraction',-500,40)
+  pop()
+fill ('white');
+  push();
+  noStroke ();
+  rotate (radians (frameCount));
+  ellipse (0,0,100,100)       
+  pop()
+  
+  let oAngle = PI/oCount;
+
+ rectMode(CENTER);
+  for(var i=0; i<oCount; i++){
+ push()
+  if(i%2==1){
+        fill('#347fa5');
+      } else {
+        fill('#f3c73b');
+  
+      }
+  rotateZ(frameCount * -0.004* PI*oAngle);
+  push ()
+    noStroke ();
+    fill ('black')
+  rect (0,0,60,60); 
+  pop ()
+ 
+  for(var j=0; j<1; j++){
+        push();
+    noStroke ();
+    rotateX(j*PI/2);
+    rotateZ(PI/4);
+    translate(width/6,0,0)
+   rect(0,0,100,100);
+  
+       pop()
+
+  }}}
 
 function orb2 () {   push()
    fill ('52')
@@ -160,53 +207,6 @@ function orb () {
 
       }
 
-function orb3 () {
-     push()
-   fill ('52')
-    textFont (font);
-  
-  textSize (60)
-  text ('03',-500,0)
-    push()
-  textSize (20)
-  text ('Magnetic \nAttraction',-500,40)
-  pop()
-fill ('white');
-  push();
-  noStroke ();
-  rotate (radians (frameCount));
-  ellipse (0,0,100,100)       
-  pop()
-  
-  let oAngle = PI/oCount;
-
- rectMode(CENTER);
-  for(var i=0; i<oCount; i++){
- push()
-  if(i%2==1){
-        fill('#347fa5');
-      } else {
-        fill('#f3c73b');
-  
-      }
-  rotateZ(frameCount * -0.004* PI*oAngle);
-  push ()
-    noStroke ();
-    fill ('black')
-  rect (0,0,60,60); 
-  pop ()
- 
-  for(var j=0; j<1; j++){
-        push();
-    noStroke ();
-    rotateX(j*PI/2);
-    rotateZ(PI/4);
-    translate(width/6,0,0)
-   rect(0,0,100,100);
-  
-       pop()
-
-  }}}
 
 function orb4() {
      push()

@@ -87,6 +87,8 @@ function keyPressed() {
    if (keyCode == RETURN) { 
     mode = 14
  }
+    if (key == 's') {
+    saveCanvas('opensesame', 'png')}
 }
 function orb3 () {
      push()

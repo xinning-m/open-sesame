@@ -107,7 +107,7 @@ fill ('white');
   rotate (radians (frameCount));
   ellipse (0,0,100,100)       
   pop()
-  frameRate (40)
+  frameRate (60)
   let oAngle = PI/oCount;
 
  rectMode(CENTER);
@@ -431,7 +431,7 @@ function orb9() {
   pop()
    noStroke ()
 
-
+  frameRate (40)
   rotate (PI/4)
   rotate (radians (frameCount));
 

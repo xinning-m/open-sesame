@@ -107,7 +107,7 @@ fill ('white');
   rotate (radians (frameCount));
   ellipse (0,0,100,100)       
   pop()
-  
+  frameRate (40)
   let oAngle = PI/oCount;
 
  rectMode(CENTER);
@@ -149,7 +149,7 @@ function orb2 () {   push()
   text ('Orange \nRoulette',-500,40)
 
   pop()
- 
+  frameRate (10)
    let oAngle = PI/oCount;
 
   for(var i=0; i<oCount; i++){
@@ -186,6 +186,8 @@ function orb () {
   textSize (20)
   text ('Red \nCynosure',-500,40)
   pop()
+  
+frameRate (10)
  let oAngle = PI/oCount;
   for(var i=0; i<oCount; i++){
  push()

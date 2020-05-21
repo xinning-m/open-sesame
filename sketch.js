@@ -835,3 +835,7 @@ function sin_wave(xCount, xLength, yCount,yLength,Speed, smooth) {
   var sinerSquare = osc * (1-pow(1-abs(sinWave),smooth));
   return sinerSquare;
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}

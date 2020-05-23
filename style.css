@@ -40,42 +40,18 @@ element.style {
     transition-duration: 100ms;
 }
 
-.tooltipster-base {
-	/* this ensures that a constrained height set by functionPosition,
-	if greater that the natural height of the tooltip, will be enforced
-	in browsers that support display:flex */
-	display: flex;
-	pointer-events: none;
-	/* this may be overriden in JS for fixed position origins */
-	position: absolute;
-}
 
-.tooltipster-box {
-	/* see .tooltipster-base. flex-shrink 1 is only necessary for IE10-
-	and flex-basis auto for IE11- (at least) */
-	flex: 1 1 auto;
-}
-
-.tooltipster-content {
-	/* prevents an overflow if the user adds padding to the div */
-	box-sizing: border-box;
-	/* these make sure we'll be able to detect any overflow */
-	max-height: 100%;
-	max-width: 100%;
-	overflow: auto;
+.tooltipster-fade.tooltipster-show {
+    opacity: 1;
 }
 .tooltipster-fade {
-	opacity: 0;
-	-webkit-transition-property: opacity;
-	-moz-transition-property: opacity;
-	-o-transition-property: opacity;
-	-ms-transition-property: opacity;
-	transition-property: opacity;
+    opacity: 0;
+    transition-property: opacity;
 }
-.tooltipster-fade.tooltipster-show {
-	opacity: 1;
+.tooltipster-base {
+    display: flex;
+    position: absolute;
 }
-
 .tooltipster-sidetip.tooltipster-noir .tooltipster-box {
     border-radius: 0;
     border: 3px solid transparent;
@@ -94,3 +70,13 @@ element.style {
     padding: 6px 14px;
 }
 
+Style Attribute {
+    pointer-events: auto;
+    z-index: 9999999;
+    right: 15 px
+    top: 15px
+    height: 222px;
+    width: 385.266px;
+    animation-duration: 100ms;
+    transition-duration: 100ms;
+}

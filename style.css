@@ -39,6 +39,17 @@ element.style {
     animation-duration: 100ms;
     transition-duration: 100ms;
 }
+.tooltipster-fade {
+	opacity: 0;
+	-webkit-transition-property: opacity;
+	-moz-transition-property: opacity;
+	-o-transition-property: opacity;
+	-ms-transition-property: opacity;
+	transition-property: opacity;
+}
+.tooltipster-fade.tooltipster-show {
+	opacity: 1;
+}
 
 .tooltipster-sidetip.tooltipster-noir .tooltipster-box {
     border-radius: 0;
@@ -70,17 +81,7 @@ element.style {
 .tooltipster-box {
     flex: 1 1 auto;
 }
-.tooltipster-fade {
-	opacity: 0;
-	-webkit-transition-property: opacity;
-	-moz-transition-property: opacity;
-	-o-transition-property: opacity;
-	-ms-transition-property: opacity;
-	transition-property: opacity;
-}
-.tooltipster-fade.tooltipster-show {
-	opacity: 1;
-}
+
 /*div {
     display: block;
 }

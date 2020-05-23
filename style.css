@@ -53,3 +53,7 @@ element.style {
     max-width: 100%;
     overflow: auto;
 }
+.tooltipster-base {
+    display: flex;
+    position: absolute;
+}

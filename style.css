@@ -28,8 +28,18 @@ canvas {
     z-index: 10;
 }
 
+
 element.style {
+    pointer-events: auto;
+    z-index: 9999999;
+    left: 439.391px;
+    top: 0px;
+    height: 222px;
+    width: 385.266px;
+    animation-duration: 100ms;
+    transition-duration: 100ms;
 }
+
 .tooltipster-sidetip.tooltipster-noir .tooltipster-box {
     border-radius: 0;
     border: 3px solid #000;

@@ -17,3 +17,39 @@ canvas {
     font-size: 15px;
     user-select: none;
 }
+#help-content {
+    font-family: monospace;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 17px;
+    white-space: pre;
+    z-index: 10;
+}
+
+element.style {
+}
+.tooltipster-sidetip.tooltipster-noir .tooltipster-box {
+    border-radius: 0;
+    border: 3px solid #000;
+}
+
+.tooltipster-sidetip.tooltipster-noir .tooltipster-arrow-background {
+    border: 11px solid transparent;
+}
+
+.tooltipster-sidetip.tooltipster-noir .tooltipster-content {
+    color: white;
+}
+
+.tooltipster-sidetip .tooltipster-content {
+    line-height: 18px;
+    padding: 6px 14px;
+}
+.tooltipster-content {
+    box-sizing: border-box;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: auto;
+}

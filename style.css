@@ -28,6 +28,25 @@ canvas {
     z-index: 10;
 }
 
+.tooltipster-content {
+	/* prevents an overflow if the user adds padding to the div */
+	box-sizing: border-box;
+	/* these make sure we'll be able to detect any overflow */
+	max-height: 100%;
+	max-width: 100%;
+	overflow: auto;
+}
+
+.tooltipster-ruler {
+	/* these let us test the size of the tooltip without overflowing the window */
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+}
 
 element.style {
     pointer-events: auto;
@@ -68,20 +87,4 @@ element.style {
     line-height: 18px;
     padding: 6px 14px;
 }
-.tooltipster-content {
-    box-sizing: border-box;
-    max-height: 100%;
-    max-width: 100%;
-    overflow: auto;
-}
-.tooltipster-base {
-    display: flex;
-    position: absolute;
-}
-.tooltipster-box {
-    flex: 1 1 auto;
-}
 
-/*div {
-    display: block;
-}

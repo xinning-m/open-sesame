@@ -67,3 +67,9 @@ element.style {
     display: flex;
     position: absolute;
 }
+.tooltipster-box {
+    flex: 1 1 auto;
+}
+div {
+    display: block;
+}

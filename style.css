@@ -32,7 +32,7 @@ canvas {
 element.style {
     pointer-events: auto;
     z-index: 9999999;
-    left: 439.391px;
+    right: 100px;
     top: 0px;
     height: 222px;
     width: 385.266px;

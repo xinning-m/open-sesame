@@ -1,7 +1,7 @@
 let oCount = 40;
 let mode =14
 let img ;
-let lines = 'Open\nWith \nYour \nKey';
+let lines = 'Open With Your Key For \nAn Unexpected Outcome';
 let para = 'Type in a four digit pin \nto reveal an unexpected outcome.'
 let para2 = 'Instructions :\n\nUse numbers between 0-9\nConsecutively same numbers\nUp Arrow : 2\nDown Arrow : 3\nRight Arrow : 4\nLeft Arrow: Repeat numbers\npreviously used in sequence\nPress S to save image\nReturn to start over'
 

@@ -724,28 +724,28 @@ function home() {
 
   
   
-  background('grey');
+  background(40);
 
-   push()
-    let waveY = sin_wave(0,10,0,20,8,1) *90;
   
-    let waveX = sin_wave(0,10,0,20,8,1) *120
+  push ()
     fill ('#EFEADA')
     textFont (font);
   
-  textSize (40) 
-  text (lines,-500,-100+waveY)
+  textSize (60) 
+  text ('0123',-500,0)
   
   push()
   textSize (15)
-  text (para, -500,-300)
-  text (para2,380,20)
+  //text ('Open Sesame', -500,40)
+  text (lines, -500,40)
+  //text (para, -500,-300)
+ // text (para2,380,20)
   pop()
   pop()
   
   push()
-  translate (-50,0)
-  scale (0.7)
+
+  scale (1.05)
   safe ()
   pop()
 
@@ -754,36 +754,24 @@ function home() {
 
 function safe () {
   rectMode(CENTER);
-  let oCount = 40;
-  let oAngle = PI/oCount;
+  let ringCount = 40;
+  let ringAngle = PI/ringCount;
   
- push()
-  fill ('black')
-  stroke ('grey')
-  strokeWeight (6)
-rect (120,0,880,600)
 
 
   push()
+  stroke (140)
+  strokeWeight (10)
   fill ('#EFEADA')
  ellipse (0,0,500,500)
   pop()
   
-  push()
-  noFill ()
-  rect (398,100,200,280)
-  pop()
-  
-  push()
-  scale (1.3)
-  image (img,250,0)
-  pop ()
-  
-  for(var i=0; i<oCount; i++){
+ 
+  for(var i=0; i<ringCount; i++){
  push()
   if(i%2==1){
     fill (25)
-
+       
    noStroke ()
       } else {
         fill('#6D9BCB');
@@ -793,7 +781,7 @@ rect (120,0,880,600)
       }
     
    push()
-  rotateZ(frameCount * -0.15 % 4*oAngle);
+  rotateZ(frameCount * -0.15 % 4*ringAngle);
   
  
   for(var j=0; j<50; j++){
@@ -803,6 +791,7 @@ rect (120,0,880,600)
     ellipse(0,0,400,100);
        pop();
     push ()
+
     fill ('#489DB5')
     rotateY (PI*frameCount)
     rotateZ(PI/8*j);
@@ -827,13 +816,6 @@ rect(0,0,300,100);
   ellipse (0,0,20,20)
   pop()
   
-}
-
-function sin_wave(xCount, xLength, yCount,yLength,Speed, smooth) {
-  var sinWave = sin((frameCount*Speed/100 + xCount*xLength));
-  var osc = (sinWave >= 0 ? 1: -1);//oscillation
-  var sinerSquare = osc * (1-pow(1-abs(sinWave),smooth));
-  return sinerSquare;
 }
 
 function windowResized() {

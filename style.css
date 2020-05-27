@@ -9,7 +9,9 @@ canvas {
   position: absolute;
     right: 15px;
     top: 15px;
-  font-family: sans-serif
+  font-family: monospace
+    font-size: 12px;
+    font-style: normal
   color: white
   
 }

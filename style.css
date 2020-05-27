@@ -9,14 +9,14 @@ canvas {
   position: absolute;
     right: 15px;
     top: 15px;
-  color: white;
+  font-family: sans-serif
+  color: white
   
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 200px;
-  background-color: transparent;
   color: white;
   font-family: monospace;
     font-size: 12px;
@@ -27,11 +27,11 @@ canvas {
     white-space: pre;
   text-align: left;
   border-radius: 0px;
-  padding: 5px 0;
+  padding:0px 0;
   position: absolute;
   z-index: 1;
-  bottom: -200%;
-  left: 35%;
+  bottom: -760%;
+  left: 30%;
   margin-left: -200px;
   opacity: 0;
   transition: opacity 0.3s;
@@ -42,6 +42,7 @@ canvas {
   position: absolute;
   top: 100%;
   left: 50%;
+
   opacity: 0;
 }
 
@@ -49,3 +50,4 @@ canvas {
   visibility: visible;
   opacity: 1;
 }
+

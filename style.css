@@ -5,78 +5,44 @@ html, body {
 canvas {
   display: block;
 }
-#help {
-    cursor: help;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-  /*  background-color: black; */
-    color: white;
-    padding: 24px;
-    font-family: sans-serif;
-    font-size: 15px;
-    user-select: none;
+.tooltip {
+  position: relative;
+  
 }
-#help-content {
-    font-family: monospace;
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: transparent;
+  color: white;
+  font-family: monospace;
     font-size: 12px;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
     line-height: 17px;
     white-space: pre;
-    z-index: 10;
+  text-align: left;
+  border-radius: 0px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -200%;
+  left: 35%;
+  margin-left: -200px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-
-element.style {
-    pointer-events: auto;
-    z-index: 9999999;
-	right : 15px
-    top: 15px;
-    height: 222px;
-    width: 385.266px;
-    animation-duration: 100ms;
-    transition-duration: 100ms;
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  opacity: 0;
 }
 
-
-.tooltipster-fade.tooltipster-show {
-    opacity: 1;
-}
-.tooltipster-fade {
-    opacity: 0;
-    transition-property: opacity;
-}
-.tooltipster-base {
-    display: flex;
-    position: absolute;
-}
-.tooltipster-sidetip.tooltipster-noir .tooltipster-box {
-    border-radius: 0;
-    border: 3px solid transparent;
-}
-
-.tooltipster-sidetip.tooltipster-noir .tooltipster-arrow-background {
-    border: 11px solid transparent;
-}
-
-.tooltipster-sidetip.tooltipster-noir .tooltipster-content {
-    color: white;
-}
-
-.tooltipster-sidetip .tooltipster-content {
-    line-height: 18px;
-    padding: 6px 14px;
-}
-
-Style Attribute {
-    pointer-events: auto;
-    z-index: 9999999;
-    right: 15 px
-    top: 15px
-    height: 222px;
-    width: 385.266px;
-    animation-duration: 100ms;
-    transition-duration: 100ms;
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
